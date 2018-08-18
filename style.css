@@ -44,7 +44,6 @@ nav {
 }
 
 .container {
-    /* border: 1px solid yellow; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -62,7 +61,6 @@ nav {
     word-wrap: break-word;
     font-size: 5vw;
     letter-spacing: 1vw;
-    /* border: 1px solid red; */
 }
 
 #keywords {
@@ -108,18 +106,15 @@ nav {
 #about {
     height: 100%;
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 #pic {
     border-radius: 100%;
-    /* border: 1px solid blue; */
 }
 
 #h1-about {
-    margin-top: 6%;
+    padding-top: 5%;
     font-size: 3vw;
-    /* border: 1px solid blue; */
 }
 
 @-webkit-keyframes arrow {
