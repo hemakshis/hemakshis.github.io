@@ -127,7 +127,7 @@ nav {
 
 @media (max-width: 576px) {
     .container {
-        margin-top: 75%;
+        margin-top: 70%;
     }
     #name {
         font-size: 8vw;
