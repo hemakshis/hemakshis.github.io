@@ -111,10 +111,6 @@ nav {
     width: 100%;
 }
 
-#pic {
-    border-radius: 100%;
-}
-
 #h1-about {
     padding-top: 5%;
     font-size: 3vw;
@@ -171,7 +167,8 @@ nav {
     .arrow {
         display: none;
     }
-    #pic {
-        padding: 4% 0%;
-    }
+}
+
+@media (max-width: 768px) {
+
 }
