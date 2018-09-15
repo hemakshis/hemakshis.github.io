@@ -126,6 +126,10 @@ nav {
     color: black;
 }
 
+#piclarge {
+    content: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/piclarge.jpeg")
+}
+
 @-webkit-keyframes arrow {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0);
@@ -170,5 +174,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-
+    #picsmall {
+        content: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/picsmall.jpeg")
+    }
 }
