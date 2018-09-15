@@ -14,7 +14,7 @@ nav {
     border-radius: 10px;
 }
 
-#myNavbar>ul>li>a, .navbar-brand, .navbar-brand:hover {
+#myNavbar>ul>li>a {
     color: #25272b;
     font-family: 'Poppins', sans-serif;
     padding: 6px 0px;
@@ -27,22 +27,12 @@ nav {
     background-color: rgba(0,0,0,0.5);
 }
 
-.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon {
-    border-color: #25272b;
-    border-radius: 15%;
-    outline: none !important;
-}
-
 .navbar-collapse {
     border-radius: 6%;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#25272b' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 #home {
-    background: url("http://www.softekmw.com/img/slider/01.jpg") no-repeat center center;
+    background: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/bg.jpeg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }

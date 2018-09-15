@@ -33,8 +33,8 @@ $(document).ready(function () {
 
     if ($(window).width() <= 768) {
         $(".navbar-toggler").on('click', function () {
-            $(".navbar-collapse").toggleClass('add-bgd');
-            $(".navbar-collapse").find('a').toggleClass('text-white');
+            $(".navbar-collapse").addClass('add-bgd');
+            $(".navbar-collapse").find('a').addClass('text-white');
             $("#resume").find('a').removeClass('text-white');
         });
     }
