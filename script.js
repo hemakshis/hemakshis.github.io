@@ -44,11 +44,4 @@ $(document).ready(function () {
         var $anchor = $($href).offset();
         $('html,body').animate({ scrollTop: $anchor.top }, 'slow');
     });
-
-    $(".arrow").on('click', function() {
-        var $href = "#about";
-        var $anchor = $($href).offset();
-        $('html,body').animate({ scrollTop: $anchor.top }, 'slow');
-    });
-
 });
