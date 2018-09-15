@@ -13,14 +13,15 @@ $(window).on('scroll', function () {
         $("nav").css('background-color', 'transparent');
         $("nav").find('a').css('color', '#25272b');
     }
+    $("#resume").find('a').css('color', '#25272b');
   });
-  
+
 $(document).ready(function () {
     'use strict';
 
     const windowWidth = $(window).innerWidth;
     const windowHeight = $(window).height();
-    
+
     console.log(windowWidth, windowHeight);
 
     $("#home, #about").css('width', windowWidth);
@@ -32,9 +33,9 @@ $(document).ready(function () {
 
     if ($(window).width() <= 768) {
         $(".navbar-toggler").on('click', function () {
-            $(".navbar-brand").toggleClass('text-white');
             $(".navbar-collapse").toggleClass('add-bgd');
             $(".navbar-collapse").find('a').toggleClass('text-white');
+            $("#resume").find('a').removeClass('text-white');
         });
     }
 

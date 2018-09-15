@@ -4,11 +4,10 @@
 <head>
     <title>Hemakshi Sachdev</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Vidaloka|Cutive+Mono" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Vidaloka|Roboto+Mono" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -25,24 +24,29 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
-                <li class="nav-item">
+
+                <!-- Skills can be listed in about section itself. Adding HTML, CSS, jQuery or any small framework/library does not looks good. -->
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
-                </li>
+                </li> -->
+
+                <!-- May be we can add this later when I will have a lot of Experience. At least I have switched job once. -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#resume">Resume</a>
+                <li id="resume" class="nav-item">
+                    <!--TODO:Change the link, CodeChef rating is incorrect. -->
+                    <a class="nav-link" target="_blank" href="https://drive.google.com/open?id=1KIv8W8M3k_0YGm_0MhFWScUCzlMufHmS">Resume</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div id="home" class="text-center">
-        <div class="container">
+        <div id="home-container" class="container">
             <p id="name" class="text-center">Hemakshi Sachdev</p>
             <p id="keywords" class="text-center">Competitive Programmer | Full-Stack Web Developer</p>
             <ul id="connect-with-me" class="text-center">
@@ -59,22 +63,40 @@
                     <a href="https://www.codechef.com/users/hemakshis" target="_blank"><i class="fa fa-code"></i></a>
                 </li>
             </ul>
-            <button type="button" class="arrow">
-                <img src="http://marcelklacan.com/images/icon.png" alt="" />
-            </button>
         </div>
+        <button type="button" class="arrow">
+            <img src="http://marcelklacan.com/images/icon.png" alt="" />
+        </button>
     </div>
 
-    <div id="about" class="container-fluid">
-        <h1 id="h1-about" class="text-center">About</h1>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <img id="pic" class="img-fluid mx-auto float-left" src="https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/profile_pic.jpeg" />
-            </div>
-            <div class="col-lg-8 col-md-8 col-xs-12">
-                <p class="text-center">
-                    Hemakshi is a Computer Science undergrad, currently in her final year.
-                </p>
+    <div id="about">
+        <div id="about-container" class="container">
+            <h1 id="h1-about" class="text-center">About</h1>
+            <br />
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <img id="pic" class="img-fluid mx-auto float-left" src="https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/DF8A8823.JPG" />
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <br />
+                    <div id="about-hemakshi" class="jumbotron bg-white">
+                        <p>
+                            Hemakshi is a Computer Science & Engineering <strong>undergrad at National Institute of Technology, Raipur.</strong> Currently in the senior year.
+                        </p>
+                        <p>
+                            She spent her last summer at the Bengaluru, India office of <strong>JPMorgan Chase & Co. as a Summer Analyst</strong>.
+                            <br />
+                            In most of her sophomore and junior year she learnt and practiced <strong>Algorithms & Data Structures.</strong>
+                            Solving hundreds of algorithmic problems on various platforms like SPOJ, CodeChef, Codeforces, etc..
+                        </p>
+                        <p>
+                            She enjoys writing code in <strong>JavaScript, C++ & little bit of Python.</strong>
+                            <br />
+                            With the help of FreeCodeCamp she learned web development, and now she feels like she owes something to this amazing tech community and so is on journey
+                            to explore the whole new world of open source.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

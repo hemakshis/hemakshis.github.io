@@ -27,10 +27,14 @@ nav {
     background-color: rgba(0,0,0,0.5);
 }
 
-.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon {
     border-color: #25272b;
     border-radius: 15%;
     outline: none !important;
+}
+
+.navbar-collapse {
+    border-radius: 6%;
 }
 
 .navbar-toggler-icon {
@@ -43,13 +47,12 @@ nav {
     background-attachment: fixed;
 }
 
-.container {
+#home-container {
     position: absolute;
-    top: 0;
+    top: 50%;
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 20%;
     padding: 0;
     height: 50%;
 }
@@ -117,6 +120,16 @@ nav {
     font-size: 3vw;
 }
 
+#about-hemakshi {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+#resume {
+    background-color: white;
+    color: black;
+}
+
 @-webkit-keyframes arrow {
     0%, 20%, 50%, 80%, 100% {
         -webkit-transform: translateY(0);
@@ -143,16 +156,17 @@ nav {
 
 @media (max-width: 576px) {
     .container {
-        margin-top: 65%;
+        top: 40%;
+        bottom: 10%;
     }
     #name, #h1-about {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     #keywords {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #connect-with-me>li>a>i {
-        font-size: 5vw;
+        font-size: 4vw;
     }
     .arrow {
         display: none;
@@ -161,4 +175,3 @@ nav {
         padding: 4% 0%;
     }
 }
-
