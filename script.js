@@ -27,18 +27,6 @@ $(document).ready(function () {
     $("#home, #about").css('width', windowWidth);
     $("#home, #about").css('height', windowHeight);
 
-    $('.carousel').carousel({
-        interval: false
-    });
-
-    if ($(window).width() <= 768) {
-        $(".navbar-toggler").on('click', function () {
-            $(".navbar-collapse").addClass('add-bgd');
-            $(".navbar-collapse").find('a').addClass('text-white');
-            $("#resume").find('a').removeClass('text-white');
-        });
-    }
-
     $("ul.navbar-nav").find('a').on('click', function () {
         var $href = $(this).attr('href');
         var $anchor = $($href).offset();
