@@ -32,7 +32,7 @@ nav {
 }
 
 #home {
-    background: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/bg.jpeg") no-repeat center center;
+    background: url("https://raw.githubusercontent.com/hemakshis/hemakshis.github.io/master/images/home-bg.jpeg") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -82,7 +82,7 @@ nav {
     width: 100%;
 }
 
-#h1-about {
+#h1-about, #h1-projects {
     padding-top: 5%;
     font-size: 3vw;
 }
@@ -90,6 +90,15 @@ nav {
 #about-hemakshi {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
+}
+
+.card-img-overlay {
+    display: none;
+    opacity: 0.6;
+}
+
+.card-img:hover + .card-img-overlay, .card-img-overlay:hover {
+    display: block;
 }
 
 #resume {
