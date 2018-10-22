@@ -101,6 +101,31 @@ nav {
     display: block;
 }
 
+#projects-container {
+    border: 1px solid blue;
+}
+
+#api-dev {
+    border: 1px solid yellow;
+}
+
+#api-dev-projects {
+    border: 1px solid red;
+}
+
+.carousel-item {
+    border: 1px solid black;
+    height: inherit;
+}
+
+#pagination-api-dev {
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    right: 0;
+    border: 1px solid green;
+}
+
 #resume {
     background-color: white;
     color: black;
