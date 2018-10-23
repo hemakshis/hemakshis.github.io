@@ -77,11 +77,6 @@ nav {
     font-size: 2vw;
 }
 
-#about {
-    height: 100%;
-    width: 100%;
-}
-
 #h1-about, #h1-projects {
     padding-top: 5%;
     font-size: 3vw;
@@ -92,38 +87,39 @@ nav {
     font-size: 15px;
 }
 
+.pagination > li {
+    cursor: pointer;
+}
+
+#pagination-projects>li>a, #pagination-projects>li>a:hover {
+    background-color: white;
+    border: white;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 0px;
+}
+
+#pagination-projects>li.active > a, #pagination-projects>li.active > a:hover {
+    background-color: white;
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
 .card-img-overlay {
     display: none;
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.40);
+    max-width: 100% !important;
 }
 
 .card-img:hover + .card-img-overlay, .card-img-overlay:hover {
     display: block;
 }
 
-#projects-container {
-    border: 1px solid blue;
-}
-
-#api-dev {
-    border: 1px solid yellow;
-}
-
-#api-dev-projects {
-    border: 1px solid red;
-}
-
-.carousel-item {
-    border: 1px solid black;
-    height: inherit;
-}
-
-#pagination-api-dev {
+#pagination-api-dev, #pagination-front-end {
     position: absolute;
     bottom: -25%;
     left: 0;
     right: 0;
-    border: 1px solid green;
 }
 
 #resume {
@@ -132,11 +128,15 @@ nav {
 }
 
 @media (max-width: 576px) {
-    .container {
+    #home-container {
         top: 40%;
         bottom: 10%;
     }
-    #name, #h1-about {
+    #name {
+        font-size: 8vw;
+    }
+    #h1-about, #h1-projects {
+        padding: 6%;
         font-size: 8vw;
     }
     #keywords {
