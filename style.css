@@ -20,7 +20,7 @@ nav {
     padding: 6px 0px;
     margin: 0px 10px;
     z-index: 1030;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .add-bgd {
@@ -69,7 +69,7 @@ nav {
 
 #connect-with-me>li {
     display: inline-block;
-    padding: 0% 5%;
+    padding: 0% 1%;
 }
 
 #connect-with-me>li>a>i {
@@ -78,8 +78,10 @@ nav {
 }
 
 #h1-about, #h1-projects {
-    padding-top: 5%;
-    font-size: 3vw;
+    font-family: 'Vidaloka', serif;
+    padding-top: 4%;
+    text-decoration: underline;
+    font-size: 4vw;
 }
 
 #about-hemakshi {
@@ -92,6 +94,7 @@ nav {
 }
 
 #pagination-projects>li>a, #pagination-projects>li>a:hover {
+    font-family: 'Poppins', sans-serif;
     background-color: white;
     border: white;
     margin-right: 12px;
@@ -105,26 +108,81 @@ nav {
     border-bottom: 3px solid #007bff;
 }
 
+.row {
+    margin: 3%;
+}
+
 .card-img-overlay {
     display: none;
-    background: rgba(0, 0, 0, 0.40);
-    max-width: 100% !important;
+    margin-left: 15px;
+    background: rgba(0,0,0,0.4);
 }
 
 .card-img:hover + .card-img-overlay, .card-img-overlay:hover {
     display: block;
 }
 
-#pagination-api-dev, #pagination-front-end {
-    position: absolute;
-    bottom: -25%;
-    left: 0;
-    right: 0;
+.card-title, .card-text, .card-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.card-text {
+    margin-bottom: 6%;
+}
+
+.card-link {
+    color: white;
+    border: 1px solid black;
+    border-radius: 6%;
+    padding: 2%;
+    text-decoration: underline;
+}
+
+.card-link:hover {
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 6%;
+    padding: 2%;
+    text-decoration: underline;
 }
 
 #resume {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 768px) {
+    #name {
+        font-size: 6vw;
+    }
+    #keywords {
+        font-size: 3vw;
+    }
+    #connect-with-me>li>a>i {
+        font-size: 3vw;
+    }
+    #h1-about, #h1-projects {
+        padding: 6%;
+        font-size: 5vw;
+    }
+    .row {
+        margin: 1%;
+    }
+    .col-md-6 {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 728px) {
+    #name {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 576px) {
