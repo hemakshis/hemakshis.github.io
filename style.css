@@ -97,6 +97,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     border: white;
+    text-align: center;
     margin-right: 12px;
     margin-left: 12px;
     border-radius: 0px;
@@ -202,5 +203,13 @@ nav {
     }
     #connect-with-me>li>a>i {
         font-size: 5vw;
+    }
+    .card-title {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    .card-text {
+        font-size: 10px;
+        margin-bottom: 3%;
     }
 }
