@@ -25,6 +25,7 @@ nav {
 
 .add-bgd {
     background-color: rgba(0,0,0,0.5);
+    border-radius: 0px;
 }
 
 .navbar-collapse {
@@ -153,10 +154,23 @@ nav {
 
 #resume {
     background-color: white;
-    color: black;
+    color: black !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    #myNavbar {
+        background: rgba(0,0,0,0.5);
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 766px) {
     #name {
         font-size: 6vw;
     }
@@ -184,7 +198,7 @@ nav {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     #home-container {
         top: 40%;
         bottom: 10%;
@@ -209,5 +223,11 @@ nav {
     .card-text {
         font-size: 10px;
         margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 360px) {
+    #pagination-projects > li > a {
+        padding: 1vw;
     }
 }
