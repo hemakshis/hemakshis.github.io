@@ -40,7 +40,7 @@ nav {
 
 #home-container {
     position: absolute;
-    top: 50%;
+    top: 40%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -53,7 +53,7 @@ nav {
     text-transform: uppercase;
     color: white;
     word-wrap: break-word;
-    font-size: 5vw;
+    font-size: 5rem;
     letter-spacing: 1vw;
 }
 
@@ -76,6 +76,14 @@ nav {
 #connect-with-me>li>a>i {
     color: white;
     font-size: 2vw;
+}
+
+#mypic {
+    position: absolute;
+    margin: auto;
+    top: -36px;
+    bottom: 0;
+    height: 380px;
 }
 
 #h1-about, #h1-projects {
@@ -115,7 +123,7 @@ nav {
 .card-img-overlay {
     display: none;
     margin-left: 15px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
 }
 
 .card-img:hover + .card-img-overlay, .card-img-overlay:hover {
@@ -137,7 +145,7 @@ nav {
 
 .card-link {
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 6%;
     padding: 2%;
     text-decoration: underline;
@@ -155,6 +163,35 @@ nav {
 #resume {
     background-color: white;
     color: black !important;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    height: 56px;
+    padding-top: 6px;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+#connect-with-me-footer {
+    display: flex;
+    padding-inline-start: 0px;
+    padding-top: 4px;
+    justify-content: center;
+}
+
+#connect-with-me-footer > li {
+    display: inline-block;
+    width: 24px;
+    margin: 0px 16px;
+}
+
+#connect-with-me-footer > li > a > i {
+    font-size: 18px;
+    color: white;
 }
 
 @media (max-width: 991px) {
